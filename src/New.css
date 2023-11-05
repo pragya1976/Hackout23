@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,500&display=swap');
+
+body{
+  
+  
+ 
+  
+  /* background-image: linear-gradient(to right,white,beige); */
+  background-color:black;
+  /* background-color: white; */
+
+  /* color:white; */
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.App {
+  
+  text-align: center;
+}
+
+
+
+.input2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+.custom-input {
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 8px 10px 16px -3px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  transition: 0.7s;
+  width:300px;
+}
+.custom-input:hover {
+  
+     /* Adjust the width as per your requirement */
+    
+ 
+  transition: 0.7s;
+   /* Adjust the width as per your requirement */
+}
+button{
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  border-radius: 28px;
+  background-color: #41d6c3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  opacity:1;
+}
+.btn{
+  padding-top:15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+button:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+  opacity:0.8;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 5px;
+  
+  
+  align-items: center;
+  justify-content: space-evenly;
+}
+li{
+  margin:6px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typed-text {
+  font-family:  'Agdasima', sans-serif;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding-top:7px;
+  font-size: 22px;
+  white-space: pre;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  animation: typing 1s steps(40, end), blink-caret .75s step-end infinite;
+}
+.cursor {
+  animation: blink 1s infinite;
+}
+@keyframes typing {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 19px;
+  width: 19px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #41d6c3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(80%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.xyx{
+  position:absolute;
+  right: 15px;
+}
+.switch{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  border: 0;
+  height: 1.2px;
+  opacity: 0.6;
+  
+  background-color: gray;
+  
+}
+.begin{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.yyy{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color:grey;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.line-container {
+  padding-top:20px;
+  display: flex;
+  align-items: center;
+}
+
+.line1 {
+  flex: 3;
+  height: 1px;
+  background-color: gray;
+  opacity: 0.5;
+}
+.line2{
+    flex: 3;
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.text-bh {
+  font-family:  'Agdasima', sans-serif;
+  text-align: center;
+  padding: 0 10px;
+  color:gray;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 4;
+}
