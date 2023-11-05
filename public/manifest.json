@@ -1,31 +1,31 @@
 {
   "manifest_version": 3,
-  "name": "Website Blocker",
+  "name": "Luminate",
   "version": "1.0",
-  "description": "Block specific websites",
+  "description": "Block distracting websites",
   "permissions": [
     "storage", 
-    "activeTab", 
     "declarativeNetRequest",
     "declarativeNetRequest",
     "declarativeNetRequestFeedback",
     "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
+
+    
     "<all_urls>"
   ],
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "ruleset_1",
-        "enabled": true,
-        "path": "blocking.json"
-      }
-    ]
+
+  "action":{
+    "default_popup": "index.html"
   },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
+  },
+  "background":{
+    "service_worker":"background.js",
+    "type":"module"
   } 
 }
